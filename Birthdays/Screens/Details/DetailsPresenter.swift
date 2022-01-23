@@ -25,7 +25,7 @@ class DetailsPresenterImpl: DetailsPresenter {
         let firstName = user.name?.first
         let lastName = user.name?.last
         let fullName = "\(firstName ?? "") \(lastName ?? "")"
-        let signature = Formatter.formatNameAsSignature(first: firstName, last: lastName)
+        let signature = Formatter.shared.formatNameAsSignature(first: firstName, last: lastName)
         let age = user.dateOfBirth?.age
         
         let viewModel =  DetailsEntity.User.ViewModel(signature: signature,

@@ -9,6 +9,7 @@ import Foundation
 
 // - A formatter class for general formatting purposes
 struct Formatter {
+    static let shared = Formatter()
     /**
      Formates first and last name to a signature. i.e Mehmet Tarhan -> MT
 
@@ -17,7 +18,7 @@ struct Formatter {
 
      - Returns: A new string with signature format
      */
-    static func formatNameAsSignature(first: String?, last: String?) -> String {
+    func formatNameAsSignature(first: String?, last: String?) -> String {
         var firstCharacter = ""
         var lastCharacter = ""
 

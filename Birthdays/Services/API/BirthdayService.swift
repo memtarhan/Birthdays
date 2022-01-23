@@ -31,8 +31,8 @@ class BirthdayServiceImpl: BirthdayService {
             }
 
             do {
-                let birthdays = try self.decoder.decode(BirthdaysResponse.self, from: data)
-                print(birthdays)
+                let response = try self.decoder.decode(BirthdaysResponse.self, from: data)
+                completionBlock(.success(response))
 
             } catch {
                 completionBlock(.failure(.invalidResponse))

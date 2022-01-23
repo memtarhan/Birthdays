@@ -8,10 +8,15 @@
 import UIKit
 
 class BirthdayTableViewCell: UITableViewCell {
+    @IBOutlet var photoView: PhotoSignatureView!
+    @IBOutlet weak var signatureLabel: UILabel!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var birthdayLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        photoView.makeCircle()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -19,5 +24,10 @@ class BirthdayTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
+    func configure(_ user: HomeEntity.User.ViewModel) {
+        signatureLabel.text = user.photoSignature
+        nameLabel.text = user.fullName
+        birthdayLabel.text = user.birthday
+    }
 }

@@ -9,8 +9,8 @@ import UIKit
 
 protocol HomeInteractor: AnyObject {
     var presenter: HomePresenter? { get set }
-    
-    func retrieveBirthdays()
+
+    func retrieveBirthdays(_ completionBlock: @escaping (Result<[BirthdayResponse], NetworkError>) -> Void)
 }
 
 class HomeInteractorImpl: HomeInteractor {
@@ -21,10 +21,15 @@ class HomeInteractorImpl: HomeInteractor {
     init(birthdayService: BirthdayService) {
         self.birthdayService = birthdayService
     }
-    
-    func retrieveBirthdays() {
+
+    func retrieveBirthdays(_ completionBlock: @escaping (Result<[BirthdayResponse], NetworkError>) -> Void) {
         birthdayService.retrieveAll { result in
-            
+            switch result {
+            case let .success(data):
+                completionBlock(.success(data.results))
+            case let .failure(error):
+                completionBlock(.failure(error))
+            }
         }
     }
 }

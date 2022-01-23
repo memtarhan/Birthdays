@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		42504E0D1832BF07B9763F57 /* Pods_BirthdaysTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F688213BE840BF7BBAC2F4 /* Pods_BirthdaysTests.framework */; };
+		4371D3A5279DC3A6009999FC /* PhotoSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3A4279DC3A6009999FC /* PhotoSignatureView.swift */; };
+		4371D3A7279DC3D7009999FC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3A6279DC3D7009999FC /* Colors.swift */; };
+		4371D3A9279DC607009999FC /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3A8279DC607009999FC /* Date+.swift */; };
+		4371D3AB279DC754009999FC /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3AA279DC754009999FC /* UIView+.swift */; };
 		43F14AC2279DA1F60029DC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14AC1279DA1F60029DC8D /* AppDelegate.swift */; };
 		43F14ACB279DA1F70029DC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F14ACA279DA1F70029DC8D /* Assets.xcassets */; };
 		43F14ACE279DA1F70029DC8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F14ACC279DA1F70029DC8D /* LaunchScreen.storyboard */; };
@@ -56,6 +60,10 @@
 		00DAF7940C4C84711A70587B /* Pods-Birthdays-BirthdaysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birthdays-BirthdaysUITests.release.xcconfig"; path = "Target Support Files/Pods-Birthdays-BirthdaysUITests/Pods-Birthdays-BirthdaysUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0980E6218F2829D56D7CC066 /* Pods-BirthdaysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthdaysTests.debug.xcconfig"; path = "Target Support Files/Pods-BirthdaysTests/Pods-BirthdaysTests.debug.xcconfig"; sourceTree = "<group>"; };
 		32EB9A925593F881241A969B /* Pods-Birthdays-BirthdaysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birthdays-BirthdaysUITests.debug.xcconfig"; path = "Target Support Files/Pods-Birthdays-BirthdaysUITests/Pods-Birthdays-BirthdaysUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4371D3A4279DC3A6009999FC /* PhotoSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSignatureView.swift; sourceTree = "<group>"; };
+		4371D3A6279DC3D7009999FC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4371D3A8279DC607009999FC /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		4371D3AA279DC754009999FC /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		43F14ABE279DA1F60029DC8D /* Birthdays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthdays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F14AC1279DA1F60029DC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F14ACA279DA1F70029DC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -250,6 +258,10 @@
 			isa = PBXGroup;
 			children = (
 				43F14B07279DA3DF0029DC8D /* ViewControllerFactory.swift */,
+				4371D3A4279DC3A6009999FC /* PhotoSignatureView.swift */,
+				4371D3A6279DC3D7009999FC /* Colors.swift */,
+				4371D3A8279DC607009999FC /* Date+.swift */,
+				4371D3AA279DC754009999FC /* UIView+.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -554,8 +566,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				43F14B05279DA3C60029DC8D /* ViewControllerFactoryAssembly.swift in Sources */,
+				4371D3A7279DC3D7009999FC /* Colors.swift in Sources */,
 				43F14AFE279DA3480029DC8D /* HomeRouter.swift in Sources */,
 				43F14B0C279DA6E10029DC8D /* BirthdayTableViewCell.swift in Sources */,
+				4371D3AB279DC754009999FC /* UIView+.swift in Sources */,
 				43F14AC2279DA1F60029DC8D /* AppDelegate.swift in Sources */,
 				43F14B00279DA3480029DC8D /* HomeInteractor.swift in Sources */,
 				43F14AF4279DA32C0029DC8D /* HomeAssembly.swift in Sources */,
@@ -564,9 +578,11 @@
 				43F14B1F279DB22C0029DC8D /* BirthdayServiceAssembly.swift in Sources */,
 				43F14AFF279DA3480029DC8D /* HomeViewController.swift in Sources */,
 				43F14B1C279DAF490029DC8D /* DateFormatter+.swift in Sources */,
+				4371D3A5279DC3A6009999FC /* PhotoSignatureView.swift in Sources */,
 				43F14B01279DA3480029DC8D /* HomeEntity.swift in Sources */,
 				43F14B16279DAD3A0029DC8D /* NetworkError.swift in Sources */,
 				43F14B19279DAD9F0029DC8D /* BirthdayResponse.swift in Sources */,
+				4371D3A9279DC607009999FC /* Date+.swift in Sources */,
 				43F14B13279DAC470029DC8D /* APICallable.swift in Sources */,
 				43F14B08279DA3DF0029DC8D /* ViewControllerFactory.swift in Sources */,
 			);

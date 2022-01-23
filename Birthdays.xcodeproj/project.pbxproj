@@ -23,6 +23,8 @@
 		43F14B02279DA3480029DC8D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F14AFC279DA3480029DC8D /* HomeViewController.xib */; };
 		43F14B05279DA3C60029DC8D /* ViewControllerFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14B04279DA3C60029DC8D /* ViewControllerFactoryAssembly.swift */; };
 		43F14B08279DA3DF0029DC8D /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14B07279DA3DF0029DC8D /* ViewControllerFactory.swift */; };
+		43F14B0C279DA6E10029DC8D /* BirthdayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14B0A279DA6E10029DC8D /* BirthdayTableViewCell.swift */; };
+		43F14B0D279DA6E10029DC8D /* BirthdayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F14B0B279DA6E10029DC8D /* BirthdayTableViewCell.xib */; };
 		88E4BB034E4AF5F07276F9DA /* Pods_Birthdays_BirthdaysUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC6D00030374C38F08A37C5 /* Pods_Birthdays_BirthdaysUITests.framework */; };
 		CAF6770581347D92B3145C44 /* Pods_Birthdays.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DCD615B6475EA7DE840180 /* Pods_Birthdays.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,8 @@
 		43F14AFC279DA3480029DC8D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		43F14B04279DA3C60029DC8D /* ViewControllerFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryAssembly.swift; sourceTree = "<group>"; };
 		43F14B07279DA3DF0029DC8D /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		43F14B0A279DA6E10029DC8D /* BirthdayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayTableViewCell.swift; sourceTree = "<group>"; };
+		43F14B0B279DA6E10029DC8D /* BirthdayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BirthdayTableViewCell.xib; sourceTree = "<group>"; };
 		65DCD615B6475EA7DE840180 /* Pods_Birthdays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Birthdays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A536E759BE31CA5DE206E5AE /* Pods-Birthdays.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birthdays.release.xcconfig"; path = "Target Support Files/Pods-Birthdays/Pods-Birthdays.release.xcconfig"; sourceTree = "<group>"; };
 		A9F688213BE840BF7BBAC2F4 /* Pods_BirthdaysTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirthdaysTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +211,7 @@
 		43F14AF6279DA33B0029DC8D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				43F14B09279DA6C20029DC8D /* Birthday */,
 				43F14AFB279DA3480029DC8D /* HomeEntity.swift */,
 				43F14AFA279DA3480029DC8D /* HomeInteractor.swift */,
 				43F14AF7279DA3480029DC8D /* HomePresenter.swift */,
@@ -231,6 +236,15 @@
 				43F14B07279DA3DF0029DC8D /* ViewControllerFactory.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		43F14B09279DA6C20029DC8D /* Birthday */ = {
+			isa = PBXGroup;
+			children = (
+				43F14B0A279DA6E10029DC8D /* BirthdayTableViewCell.swift */,
+				43F14B0B279DA6E10029DC8D /* BirthdayTableViewCell.xib */,
+			);
+			path = Birthday;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F14B0D279DA6E10029DC8D /* BirthdayTableViewCell.xib in Resources */,
 				43F14ACE279DA1F70029DC8D /* LaunchScreen.storyboard in Resources */,
 				43F14ACB279DA1F70029DC8D /* Assets.xcassets in Resources */,
 				43F14B02279DA3480029DC8D /* HomeViewController.xib in Resources */,
@@ -474,6 +489,7 @@
 			files = (
 				43F14B05279DA3C60029DC8D /* ViewControllerFactoryAssembly.swift in Sources */,
 				43F14AFE279DA3480029DC8D /* HomeRouter.swift in Sources */,
+				43F14B0C279DA6E10029DC8D /* BirthdayTableViewCell.swift in Sources */,
 				43F14AC2279DA1F60029DC8D /* AppDelegate.swift in Sources */,
 				43F14B00279DA3480029DC8D /* HomeInteractor.swift in Sources */,
 				43F14AF4279DA32C0029DC8D /* HomeAssembly.swift in Sources */,

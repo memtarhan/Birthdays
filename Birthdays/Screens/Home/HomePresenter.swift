@@ -13,7 +13,7 @@ protocol HomePresenter: AnyObject {
     var router: HomeRouter? { get set }
 
     func present()
-    func presentDetails(for user: BirthdayResponse)
+    func presentDetails(for user: UserResponse)
 }
 
 class HomePresenterImpl: HomePresenter {
@@ -29,7 +29,7 @@ class HomePresenterImpl: HomePresenter {
                     let firstName = birthday.name?.first
                     let lastName = birthday.name?.last
                     let fullName = "\(firstName ?? "") \(lastName ?? "")"
-                    let signature = formatNameAsSignature(first: firstName, last: lastName)
+                    let signature = Formatter.formatNameAsSignature(first: firstName, last: lastName)
                     let birthdate = birthday.dateOfBirth?.date?.asBirthday ?? ""
                     return HomeEntity.User.ViewModel(photoSignature: signature,
                                                      fullName: fullName,
@@ -48,7 +48,7 @@ class HomePresenterImpl: HomePresenter {
         })
     }
 
-    func presentDetails(for user: BirthdayResponse) {
+    func presentDetails(for user: UserResponse) {
         router?.navigateToDetails(withResponse: user)
     }
 }

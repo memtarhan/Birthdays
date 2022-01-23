@@ -1,5 +1,5 @@
 //
-//  BirthdayService.swift
+//  UserService.swift
 //  Birthdays
 //
 //  Created by Mehmet Tarhan on 23/01/2022.
@@ -8,17 +8,17 @@
 import Alamofire
 import Foundation
 
-protocol BirthdayService: APICallable {
+protocol UserService: APICallable {
     /**
      Retrieves all birthdays
 
      - Parameter completionBlock: A completion block with success and/or failure messages
      */
-    func retrieveAll(_ completionBlock: @escaping (Result<BirthdaysResponse, NetworkError>) -> Void)
+    func retrieveAll(_ completionBlock: @escaping (Result<UsersResponse, NetworkError>) -> Void)
 }
 
-class BirthdayServiceImpl: BirthdayService {
-    func retrieveAll(_ completionBlock: @escaping (Result<BirthdaysResponse, NetworkError>) -> Void) {
+class UserServiceImpl: UserService {
+    func retrieveAll(_ completionBlock: @escaping (Result<UsersResponse, NetworkError>) -> Void) {
         guard let url = URL(string: "\(baseURL)?results=1000&seed=chalkboard&inc=name,dob") else {
             completionBlock(.failure(NetworkError.invalidURL))
             return
@@ -31,7 +31,7 @@ class BirthdayServiceImpl: BirthdayService {
             }
 
             do {
-                let response = try self.decoder.decode(BirthdaysResponse.self, from: data)
+                let response = try self.decoder.decode(UsersResponse.self, from: data)
                 completionBlock(.success(response))
 
             } catch {

@@ -9,14 +9,14 @@ import UIKit
 
 protocol DetailsViewController: AnyObject {
     var presenter: DetailsPresenter? { get set }
-    var response: BirthdayResponse? { get set }
+    var response: UserResponse? { get set }
 
     func display(_ user: DetailsEntity.User.ViewModel)
 }
 
 class DetailsViewControllerImpl: UIViewController {
     var presenter: DetailsPresenter?
-    var response: BirthdayResponse?
+    var response: UserResponse?
 
     // MARK: - Outlets
 

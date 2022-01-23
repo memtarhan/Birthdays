@@ -17,7 +17,7 @@ extension APICallable {
     var baseURL: String { return "https://randomuser.me/api/" }
     var decoder: JSONDecoder {
         let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
+        decoder.dateDecodingStrategy = .formatted(DateFormatter.apiFormat)
         return decoder
     }
 }

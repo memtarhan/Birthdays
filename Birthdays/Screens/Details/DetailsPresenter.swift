@@ -12,7 +12,7 @@ protocol DetailsPresenter: AnyObject {
     var interactor: DetailsInteractor? { get set }
     var router: DetailsRouter? { get set }
     
-    func present(_ user: BirthdayResponse)
+    func present(_ user: UserResponse)
     func presentPrevious()
 }
 
@@ -21,11 +21,11 @@ class DetailsPresenterImpl: DetailsPresenter {
     var interactor: DetailsInteractor?
     var router: DetailsRouter?
     
-    func present(_ user: BirthdayResponse) {
+    func present(_ user: UserResponse) {
         let firstName = user.name?.first
         let lastName = user.name?.last
         let fullName = "\(firstName ?? "") \(lastName ?? "")"
-        let signature = formatNameAsSignature(first: firstName, last: lastName)
+        let signature = Formatter.formatNameAsSignature(first: firstName, last: lastName)
         let age = user.dateOfBirth?.age
         
         let viewModel =  DetailsEntity.User.ViewModel(signature: signature,

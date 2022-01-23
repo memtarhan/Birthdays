@@ -1,5 +1,5 @@
 //
-//  BirthdayResponse.swift
+//  UserResponse.swift
 //  Birthdays
 //
 //  Created by Mehmet Tarhan on 23/01/2022.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-class BirthdaysResponse: Codable {
-    var results: [BirthdayResponse]
+class UsersResponse: Codable {
+    var results: [UserResponse]
 }
 
-class BirthdayResponse: Codable {
+class UserResponse: Codable {
     var name: NameResponse?
     var dateOfBirth: DateOfBirthResponse?
 

@@ -31,7 +31,7 @@ class HomeAssembly: Assembly {
         }
 
         container.register(HomeInteractor.self) { r in
-            HomeInteractorImpl(birthdayService: r.resolve(BirthdayService.self)!)
+            HomeInteractorImpl(userService: r.resolve(UserService.self)!)
         }
 
         container.register(HomeRouter.self) { r in

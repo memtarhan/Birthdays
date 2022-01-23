@@ -10,7 +10,7 @@ import UIKit
 protocol HomeRouter: AnyObject {
     var view: HomeViewController? { get set }
 
-    func navigateToDetails(withResponse response: BirthdayResponse)
+    func navigateToDetails(withResponse response: UserResponse)
 }
 
 class HomeRouterImpl: HomeRouter {
@@ -22,7 +22,7 @@ class HomeRouterImpl: HomeRouter {
         self.factory = factory
     }
 
-    func navigateToDetails(withResponse response: BirthdayResponse) {
+    func navigateToDetails(withResponse response: UserResponse) {
         let destination = factory.details
         destination.response = response
         guard let nextViewController = destination as? UIViewController,

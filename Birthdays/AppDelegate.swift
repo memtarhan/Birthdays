@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func initDI() {
         assembler = Assembler([
             /// - Services -> Network
-            BirthdayServiceAssembly(),
+            UserServiceAssembly(),
             
             /// - Screens
             DetailsAssembly(),

@@ -14,5 +14,6 @@ class CustomButton: UIButton {
         layer.cornerRadius = 5.0
         backgroundColor = .label
         setTitleColor(.systemBackground, for: [])
+        titleLabel?.font =  .systemFont(ofSize: 14, weight: .bold)
     }
 }

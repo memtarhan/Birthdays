@@ -9,6 +9,7 @@ import Foundation
 import Swinject
 
 protocol ViewControllerFactory {
+    var details: DetailsViewController { get }
     var home: HomeViewController { get }
 }
 
@@ -19,5 +20,6 @@ class ViewControllerFactoryImpl: ViewControllerFactory {
         self.assembler = assembler
     }
 
+    var details: DetailsViewController { assembler.resolver.resolve(DetailsViewController.self)! }
     var home: HomeViewController { assembler.resolver.resolve(HomeViewController.self)! }
 }

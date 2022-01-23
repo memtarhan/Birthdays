@@ -21,7 +21,7 @@ struct HomeEntity {
             let photoSignature: String
             let fullName: String
             let birthday: String
-            let age: String
+            let user: BirthdayResponse
         }
     }
 }

@@ -42,6 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             BirthdayServiceAssembly(),
             
             /// - Screens
+            DetailsAssembly(),
             HomeAssembly(),
 
         ])

@@ -98,5 +98,6 @@ extension HomeViewControllerImpl: UITableViewDataSource {
 
 extension HomeViewControllerImpl: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.presentDetails(for: users[indexPath.row].user)
     }
 }

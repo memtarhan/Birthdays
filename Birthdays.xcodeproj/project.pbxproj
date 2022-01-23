@@ -12,6 +12,14 @@
 		4371D3A7279DC3D7009999FC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3A6279DC3D7009999FC /* Colors.swift */; };
 		4371D3A9279DC607009999FC /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3A8279DC607009999FC /* Date+.swift */; };
 		4371D3AB279DC754009999FC /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3AA279DC754009999FC /* UIView+.swift */; };
+		4371D3B3279DD2AF009999FC /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3AD279DD2AF009999FC /* DetailsPresenter.swift */; };
+		4371D3B4279DD2AF009999FC /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3AE279DD2AF009999FC /* DetailsRouter.swift */; };
+		4371D3B5279DD2AF009999FC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3AF279DD2AF009999FC /* DetailsViewController.swift */; };
+		4371D3B6279DD2AF009999FC /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3B0279DD2AF009999FC /* DetailsInteractor.swift */; };
+		4371D3B7279DD2AF009999FC /* DetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3B1279DD2AF009999FC /* DetailsEntity.swift */; };
+		4371D3B8279DD2AF009999FC /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4371D3B2279DD2AF009999FC /* DetailsViewController.xib */; };
+		4371D3BA279DD2C3009999FC /* DetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3B9279DD2C3009999FC /* DetailsAssembly.swift */; };
+		4371D3BC279DD452009999FC /* BirthdayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3BB279DD452009999FC /* BirthdayResponse.swift */; };
 		43F14AC2279DA1F60029DC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14AC1279DA1F60029DC8D /* AppDelegate.swift */; };
 		43F14ACB279DA1F70029DC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F14ACA279DA1F70029DC8D /* Assets.xcassets */; };
 		43F14ACE279DA1F70029DC8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F14ACC279DA1F70029DC8D /* LaunchScreen.storyboard */; };
@@ -32,7 +40,6 @@
 		43F14B10279DAC1F0029DC8D /* BirthdayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14B0F279DAC1F0029DC8D /* BirthdayService.swift */; };
 		43F14B13279DAC470029DC8D /* APICallable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14B12279DAC470029DC8D /* APICallable.swift */; };
 		43F14B16279DAD3A0029DC8D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14B15279DAD3A0029DC8D /* NetworkError.swift */; };
-		43F14B19279DAD9F0029DC8D /* BirthdayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14B18279DAD9F0029DC8D /* BirthdayResponse.swift */; };
 		43F14B1C279DAF490029DC8D /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14B1B279DAF490029DC8D /* DateFormatter+.swift */; };
 		43F14B1F279DB22C0029DC8D /* BirthdayServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14B1E279DB22C0029DC8D /* BirthdayServiceAssembly.swift */; };
 		88E4BB034E4AF5F07276F9DA /* Pods_Birthdays_BirthdaysUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC6D00030374C38F08A37C5 /* Pods_Birthdays_BirthdaysUITests.framework */; };
@@ -64,6 +71,14 @@
 		4371D3A6279DC3D7009999FC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4371D3A8279DC607009999FC /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		4371D3AA279DC754009999FC /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		4371D3AD279DD2AF009999FC /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		4371D3AE279DD2AF009999FC /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		4371D3AF279DD2AF009999FC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		4371D3B0279DD2AF009999FC /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		4371D3B1279DD2AF009999FC /* DetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEntity.swift; sourceTree = "<group>"; };
+		4371D3B2279DD2AF009999FC /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		4371D3B9279DD2C3009999FC /* DetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAssembly.swift; sourceTree = "<group>"; };
+		4371D3BB279DD452009999FC /* BirthdayResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayResponse.swift; sourceTree = "<group>"; };
 		43F14ABE279DA1F60029DC8D /* Birthdays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthdays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F14AC1279DA1F60029DC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F14ACA279DA1F70029DC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,7 +103,6 @@
 		43F14B0F279DAC1F0029DC8D /* BirthdayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayService.swift; sourceTree = "<group>"; };
 		43F14B12279DAC470029DC8D /* APICallable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallable.swift; sourceTree = "<group>"; };
 		43F14B15279DAD3A0029DC8D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		43F14B18279DAD9F0029DC8D /* BirthdayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayResponse.swift; sourceTree = "<group>"; };
 		43F14B1B279DAF490029DC8D /* DateFormatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
 		43F14B1E279DB22C0029DC8D /* BirthdayServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayServiceAssembly.swift; sourceTree = "<group>"; };
 		65DCD615B6475EA7DE840180 /* Pods_Birthdays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Birthdays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +162,19 @@
 				A9F688213BE840BF7BBAC2F4 /* Pods_BirthdaysTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4371D3AC279DD2A0009999FC /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4371D3AD279DD2AF009999FC /* DetailsPresenter.swift */,
+				4371D3AE279DD2AF009999FC /* DetailsRouter.swift */,
+				4371D3AF279DD2AF009999FC /* DetailsViewController.swift */,
+				4371D3B0279DD2AF009999FC /* DetailsInteractor.swift */,
+				4371D3B1279DD2AF009999FC /* DetailsEntity.swift */,
+				4371D3B2279DD2AF009999FC /* DetailsViewController.xib */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		43F14AB5279DA1F60029DC8D = {
@@ -220,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				43F14AF3279DA32C0029DC8D /* HomeAssembly.swift */,
+				4371D3B9279DD2C3009999FC /* DetailsAssembly.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -227,6 +255,7 @@
 		43F14AF5279DA3350029DC8D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4371D3AC279DD2A0009999FC /* Details */,
 				43F14AF6279DA33B0029DC8D /* Home */,
 			);
 			path = Screens;
@@ -303,8 +332,8 @@
 		43F14B17279DAD8A0029DC8D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				4371D3BB279DD452009999FC /* BirthdayResponse.swift */,
 				43F14B15279DAD3A0029DC8D /* NetworkError.swift */,
-				43F14B18279DAD9F0029DC8D /* BirthdayResponse.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -436,6 +465,7 @@
 			files = (
 				43F14B0D279DA6E10029DC8D /* BirthdayTableViewCell.xib in Resources */,
 				43F14ACE279DA1F70029DC8D /* LaunchScreen.storyboard in Resources */,
+				4371D3B8279DD2AF009999FC /* DetailsViewController.xib in Resources */,
 				43F14ACB279DA1F70029DC8D /* Assets.xcassets in Resources */,
 				43F14B02279DA3480029DC8D /* HomeViewController.xib in Resources */,
 			);
@@ -566,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43F14B05279DA3C60029DC8D /* ViewControllerFactoryAssembly.swift in Sources */,
+				4371D3B5279DD2AF009999FC /* DetailsViewController.swift in Sources */,
 				4371D3A7279DC3D7009999FC /* Colors.swift in Sources */,
 				43F14AFE279DA3480029DC8D /* HomeRouter.swift in Sources */,
 				43F14B0C279DA6E10029DC8D /* BirthdayTableViewCell.swift in Sources */,
@@ -573,18 +604,23 @@
 				43F14AC2279DA1F60029DC8D /* AppDelegate.swift in Sources */,
 				43F14B00279DA3480029DC8D /* HomeInteractor.swift in Sources */,
 				43F14AF4279DA32C0029DC8D /* HomeAssembly.swift in Sources */,
+				4371D3BC279DD452009999FC /* BirthdayResponse.swift in Sources */,
 				43F14AFD279DA3480029DC8D /* HomePresenter.swift in Sources */,
 				43F14B10279DAC1F0029DC8D /* BirthdayService.swift in Sources */,
 				43F14B1F279DB22C0029DC8D /* BirthdayServiceAssembly.swift in Sources */,
+				4371D3B4279DD2AF009999FC /* DetailsRouter.swift in Sources */,
 				43F14AFF279DA3480029DC8D /* HomeViewController.swift in Sources */,
 				43F14B1C279DAF490029DC8D /* DateFormatter+.swift in Sources */,
 				4371D3A5279DC3A6009999FC /* PhotoSignatureView.swift in Sources */,
 				43F14B01279DA3480029DC8D /* HomeEntity.swift in Sources */,
 				43F14B16279DAD3A0029DC8D /* NetworkError.swift in Sources */,
-				43F14B19279DAD9F0029DC8D /* BirthdayResponse.swift in Sources */,
+				4371D3BA279DD2C3009999FC /* DetailsAssembly.swift in Sources */,
+				4371D3B6279DD2AF009999FC /* DetailsInteractor.swift in Sources */,
+				4371D3B3279DD2AF009999FC /* DetailsPresenter.swift in Sources */,
 				4371D3A9279DC607009999FC /* Date+.swift in Sources */,
 				43F14B13279DAC470029DC8D /* APICallable.swift in Sources */,
 				43F14B08279DA3DF0029DC8D /* ViewControllerFactory.swift in Sources */,
+				4371D3B7279DD2AF009999FC /* DetailsEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

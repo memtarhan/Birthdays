@@ -7,6 +7,7 @@ target 'Birthdays' do
 
   # Pods for Birthdays
 pod 'Swinject'
+pod 'Alamofire'
 
   target 'BirthdaysTests' do
     inherit! :search_paths

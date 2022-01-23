@@ -33,6 +33,8 @@ class HomeViewControllerImpl: UIViewController {
         title = "Birthdays"
         
         setupTableView()
+        
+        presenter?.present()
     }
 
     private func setupTableView() {

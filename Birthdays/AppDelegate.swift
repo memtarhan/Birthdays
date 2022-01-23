@@ -38,6 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// - Initializing dependency injection
     private func initDI() {
         assembler = Assembler([
+            /// - Services -> Network
+            BirthdayServiceAssembly(),
+            
             /// - Screens
             HomeAssembly(),
 

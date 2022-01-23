@@ -30,8 +30,8 @@ class HomeAssembly: Assembly {
             HomePresenterImpl()
         }
 
-        container.register(HomeInteractor.self) { _ in
-            HomeInteractorImpl()
+        container.register(HomeInteractor.self) { r in
+            HomeInteractorImpl(birthdayService: r.resolve(BirthdayService.self)!)
         }
 
         container.register(HomeRouter.self) { r in

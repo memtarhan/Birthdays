@@ -13,6 +13,7 @@ protocol DetailsPresenter: AnyObject {
     var router: DetailsRouter? { get set }
     
     func present(_ user: BirthdayResponse)
+    func presentPrevious()
 }
 
 class DetailsPresenterImpl: DetailsPresenter {
@@ -33,5 +34,9 @@ class DetailsPresenterImpl: DetailsPresenter {
         
         self.view?.display(viewModel)
 
+    }
+    
+    func presentPrevious() {
+        router?.navigateBack()
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 protocol DetailsViewController: AnyObject {
     var presenter: DetailsPresenter? { get set }
     var response: BirthdayResponse? { get set }
-    
+
     func display(_ user: DetailsEntity.User.ViewModel)
 }
 
@@ -21,21 +21,19 @@ class DetailsViewControllerImpl: UIViewController {
     // MARK: - Outlets
 
     @IBOutlet var photoSignatureView: UIView!
-    @IBOutlet weak var signatureLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var ageLabel: UILabel!
-    
+    @IBOutlet var signatureLabel: UILabel!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var ageLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
 
-    
     @IBAction func didTapGoBackButton(_ sender: Any) {
-        // - Alternatively could use router to navigate back
-        dismiss(animated: true, completion: nil)
+        presenter?.presentPrevious()
     }
-    
+
     private func setup() {
         photoSignatureView.makeCircle()
 
@@ -43,7 +41,7 @@ class DetailsViewControllerImpl: UIViewController {
             dismiss(animated: true, completion: nil)
             return
         }
-        
+
         presenter?.present(response)
     }
 }
@@ -56,7 +54,6 @@ extension DetailsViewControllerImpl: DetailsViewController {
             self.signatureLabel.text = user.signature
             self.nameLabel.text = user.name
             self.ageLabel.text = user.age
-            
         }
     }
 }

@@ -20,6 +20,8 @@
 		4371D3B8279DD2AF009999FC /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4371D3B2279DD2AF009999FC /* DetailsViewController.xib */; };
 		4371D3BA279DD2C3009999FC /* DetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3B9279DD2C3009999FC /* DetailsAssembly.swift */; };
 		4371D3BC279DD452009999FC /* BirthdayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3BB279DD452009999FC /* BirthdayResponse.swift */; };
+		4371D3BE279DD6E4009999FC /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3BD279DD6E4009999FC /* CustomButton.swift */; };
+		4371D3C0279DD8AD009999FC /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371D3BF279DD8AD009999FC /* Formatter.swift */; };
 		43F14AC2279DA1F60029DC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F14AC1279DA1F60029DC8D /* AppDelegate.swift */; };
 		43F14ACB279DA1F70029DC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F14ACA279DA1F70029DC8D /* Assets.xcassets */; };
 		43F14ACE279DA1F70029DC8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F14ACC279DA1F70029DC8D /* LaunchScreen.storyboard */; };
@@ -79,6 +81,8 @@
 		4371D3B2279DD2AF009999FC /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		4371D3B9279DD2C3009999FC /* DetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAssembly.swift; sourceTree = "<group>"; };
 		4371D3BB279DD452009999FC /* BirthdayResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayResponse.swift; sourceTree = "<group>"; };
+		4371D3BD279DD6E4009999FC /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4371D3BF279DD8AD009999FC /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		43F14ABE279DA1F60029DC8D /* Birthdays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthdays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F14AC1279DA1F60029DC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F14ACA279DA1F70029DC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -291,6 +295,8 @@
 				4371D3A6279DC3D7009999FC /* Colors.swift */,
 				4371D3A8279DC607009999FC /* Date+.swift */,
 				4371D3AA279DC754009999FC /* UIView+.swift */,
+				4371D3BD279DD6E4009999FC /* CustomButton.swift */,
+				4371D3BF279DD8AD009999FC /* Formatter.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -597,6 +603,7 @@
 			files = (
 				43F14B05279DA3C60029DC8D /* ViewControllerFactoryAssembly.swift in Sources */,
 				4371D3B5279DD2AF009999FC /* DetailsViewController.swift in Sources */,
+				4371D3BE279DD6E4009999FC /* CustomButton.swift in Sources */,
 				4371D3A7279DC3D7009999FC /* Colors.swift in Sources */,
 				43F14AFE279DA3480029DC8D /* HomeRouter.swift in Sources */,
 				43F14B0C279DA6E10029DC8D /* BirthdayTableViewCell.swift in Sources */,
@@ -604,6 +611,7 @@
 				43F14AC2279DA1F60029DC8D /* AppDelegate.swift in Sources */,
 				43F14B00279DA3480029DC8D /* HomeInteractor.swift in Sources */,
 				43F14AF4279DA32C0029DC8D /* HomeAssembly.swift in Sources */,
+				4371D3C0279DD8AD009999FC /* Formatter.swift in Sources */,
 				4371D3BC279DD452009999FC /* BirthdayResponse.swift in Sources */,
 				43F14AFD279DA3480029DC8D /* HomePresenter.swift in Sources */,
 				43F14B10279DAC1F0029DC8D /* BirthdayService.swift in Sources */,

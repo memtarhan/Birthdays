@@ -29,7 +29,7 @@ class HomePresenterImpl: HomePresenter {
                     let firstName = birthday.name?.first
                     let lastName = birthday.name?.last
                     let fullName = "\(firstName ?? "") \(lastName ?? "")"
-                    let signature = self.formatNameAsSignature(first: firstName, last: lastName)
+                    let signature = formatNameAsSignature(first: firstName, last: lastName)
                     let birthdate = birthday.dateOfBirth?.date?.asBirthday ?? ""
                     return HomeEntity.User.ViewModel(photoSignature: signature,
                                                      fullName: fullName,
@@ -50,24 +50,5 @@ class HomePresenterImpl: HomePresenter {
 
     func presentDetails(for user: BirthdayResponse) {
         router?.navigateToDetails(withResponse: user)
-    }
-
-    private func formatNameAsSignature(first: String?, last: String?) -> String {
-        var firstCharacter = ""
-        var lastCharacter = ""
-
-        if let first = first {
-            if first.count > 0 {
-                firstCharacter = "\(first.first!)"
-            }
-        }
-
-        if let last = last {
-            if last.count > 0 {
-                lastCharacter = "\(last.first!)"
-            }
-        }
-
-        return "\(firstCharacter)\(lastCharacter)"
     }
 }

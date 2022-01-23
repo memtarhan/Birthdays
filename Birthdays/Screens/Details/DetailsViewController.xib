@@ -4,12 +4,17 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewControllerImpl" customModule="Birthdays" customModuleProvider="target">
             <connections>
+                <outlet property="ageLabel" destination="Ytq-Gc-imb" id="v4a-Nd-e37"/>
+                <outlet property="nameLabel" destination="XJf-UN-SPO" id="r2W-BP-dj5"/>
+                <outlet property="photoSignatureView" destination="3gV-Kp-4FP" id="AQZ-gw-eTt"/>
+                <outlet property="signatureLabel" destination="LgS-FW-y8T" id="eTa-8Q-98L"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +22,71 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gV-Kp-4FP">
+                    <rect key="frame" x="143" y="108" width="128" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgS-FW-y8T">
+                            <rect key="frame" x="64" y="64" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="photoSignature"/>
+                    <constraints>
+                        <constraint firstItem="LgS-FW-y8T" firstAttribute="centerY" secondItem="3gV-Kp-4FP" secondAttribute="centerY" id="HDJ-Gj-oa4"/>
+                        <constraint firstItem="LgS-FW-y8T" firstAttribute="centerX" secondItem="3gV-Kp-4FP" secondAttribute="centerX" id="e6D-3G-kXJ"/>
+                        <constraint firstAttribute="width" constant="128" id="tgb-Mt-KkD"/>
+                        <constraint firstAttribute="height" constant="128" id="tkr-jX-wdh"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="wwk-kh-6TQ">
+                    <rect key="frame" x="166" y="256" width="82" height="71"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJf-UN-SPO">
+                            <rect key="frame" x="0.0" y="0.0" width="82" height="38.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ytq-Gc-imb">
+                            <rect key="frame" x="26" y="51.5" width="30" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUN-y9-3Dz" customClass="CustomButton" customModule="Birthdays" customModuleProvider="target">
+                    <rect key="frame" x="32" y="347" width="350" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="nFz-Ea-auc"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="GO BACK"/>
+                    <connections>
+                        <action selector="didTapGoBackButton:" destination="-1" eventType="touchUpInside" id="1xG-oe-RJi"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wwk-kh-6TQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Mb-Qc-ch9"/>
+                <constraint firstItem="3gV-Kp-4FP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="64" id="MVZ-wb-wFZ"/>
+                <constraint firstItem="gUN-y9-3Dz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="P3S-ru-PxV"/>
+                <constraint firstItem="wwk-kh-6TQ" firstAttribute="top" secondItem="3gV-Kp-4FP" secondAttribute="bottom" constant="20" id="Rb9-2I-hzC"/>
+                <constraint firstItem="gUN-y9-3Dz" firstAttribute="top" secondItem="wwk-kh-6TQ" secondAttribute="bottom" constant="20" id="byc-b3-YZa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gUN-y9-3Dz" secondAttribute="trailing" constant="32" id="jNZ-Yx-OfH"/>
+                <constraint firstItem="3gV-Kp-4FP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zSS-nA-FzA"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="152"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="photoSignature">
+            <color red="0.7686274509803922" green="0.7686274509803922" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

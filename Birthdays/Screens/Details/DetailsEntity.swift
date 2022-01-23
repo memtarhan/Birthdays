@@ -8,7 +8,7 @@
 import UIKit
 
 struct DetailsEntity {
-    struct Config {
+    struct User {
         struct ViewModel {
             let signature: String
             let name: String
